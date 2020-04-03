@@ -268,14 +268,14 @@
             <av:PointCollection x:Key="ConnectorLocation">310,166 310,226.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <If Condition="[weather.Contains(&quot;Rain&quot;) or weather.Contains(&quot;Showers&quot;) or weather.Contains(&quot;Thunderstorm&quot;) or weather.Contains(&quot;Light rain&quot;)]" DisplayName="If it is raining.." sap:VirtualizedContainerService.HintSize="484,206" sap2010:WorkflowViewState.IdRef="If_1">
+        <If Condition="[weather.Contains(&quot;Rain&quot;) or weather.Contains(&quot;Showers&quot;) or weather.Contains(&quot;Thunderstorm&quot;) or weather.Contains(&quot;Light rain&quot;)]" DisplayName="If it is raining.." sap:VirtualizedContainerService.HintSize="484,210" sap2010:WorkflowViewState.IdRef="If_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <If.Then>
-            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign DisplayName="Assign: rainGear" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[rainGear]</OutArgument>
               </Assign.To>
